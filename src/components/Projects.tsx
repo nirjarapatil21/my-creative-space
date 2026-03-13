@@ -37,6 +37,7 @@ const projects = [
 ];
 
 const Projects = () => {
+  const navigate = useNavigate();
   return (
     <section id="work" className="px-6 md:px-12 py-16">
       <div className="max-w-7xl mx-auto border border-border rounded-3xl p-8 md:p-14">
