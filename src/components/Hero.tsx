@@ -1,63 +1,66 @@
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 pt-16">
-      <div className="max-w-3xl text-center">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-sm font-medium text-primary tracking-widest uppercase mb-4"
-        >
-          UI/UX Designer
-        </motion.p>
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="font-heading font-extrabold text-5xl md:text-7xl text-foreground leading-tight tracking-tight mb-6"
-        >
-          Hi, I'm <span className="text-primary">Your Name</span>
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto mb-10"
-        >
-          A passionate UI/UX designer crafting intuitive, user-centered digital experiences that solve real problems.
-        </motion.p>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex items-center justify-center gap-4"
-        >
-          <a
-            href="#work"
-            className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-heading font-semibold text-sm hover:opacity-90 transition-opacity"
+    <section className="px-6 md:px-12 py-8">
+      <div className="max-w-7xl mx-auto bg-hero-bg rounded-3xl overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+          {/* Left - Text */}
+          <div className="p-10 md:p-16 lg:p-20">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.1] tracking-tight"
+            >
+              Hi, I'm Your Name
+              <br />
+              UI/UX Designer
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              className="text-muted-foreground text-base md:text-lg mt-5 max-w-md leading-relaxed"
+            >
+              I design simple and user-friendly digital experiences.
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="flex flex-wrap items-center gap-3 mt-8"
+            >
+              <a
+                href="#work"
+                className="bg-primary text-primary-foreground px-7 py-3 rounded-full font-heading font-semibold text-sm hover:opacity-90 transition-opacity"
+              >
+                View Work →
+              </a>
+              <a
+                href="#contact"
+                className="border border-foreground text-foreground px-7 py-3 rounded-full font-heading font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                Contact Me
+              </a>
+            </motion.div>
+          </div>
+
+          {/* Right - Photo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative h-80 md:h-full min-h-[400px]"
           >
-            View My Work
-          </a>
-          <a
-            href="#contact"
-            className="border border-border text-foreground px-8 py-3 rounded-lg font-heading font-semibold text-sm hover:bg-secondary transition-colors"
-          >
-            Get in Touch
-          </a>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-          className="mt-20"
-        >
-          <a href="#work" className="inline-block text-muted-foreground hover:text-primary transition-colors animate-bounce">
-            <ArrowDown size={24} />
-          </a>
-        </motion.div>
+            <img
+              src={profilePhoto}
+              alt="Profile photo"
+              className="w-full h-full object-cover object-top"
+            />
+          </motion.div>
+        </div>
       </div>
     </section>
   );
