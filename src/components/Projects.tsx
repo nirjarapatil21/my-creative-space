@@ -65,6 +65,7 @@ const Projects = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
               className="group cursor-pointer bg-section-highlight rounded-2xl overflow-hidden"
+              onClick={() => project.slug && navigate(`/project/${project.slug}`)}
             >
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-0">
                 <div className="p-8 md:p-10">
