@@ -3,7 +3,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   return (
-    <section className="px-6 md:px-12 py-8">
+    <section id="hero" className="px-6 md:px-12 py-8">
       <div className="max-w-7xl mx-auto bg-hero-bg rounded-3xl overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           {/* Left - Text */}
