@@ -78,6 +78,10 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
+                  <button className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-foreground group-hover:gap-3 transition-all duration-300">
+                    View Project
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  </button>
                 </div>
                 <div className="overflow-hidden h-56 md:h-64">
                   <img
