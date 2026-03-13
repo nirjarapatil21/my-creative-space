@@ -24,7 +24,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="text-muted-foreground text-base md:text-lg mt-5 max-w-md leading-relaxed">
               
-              I design simple and user-friendly digital experiences.
+              A passionate UI/UX designer crafting intuitive, user-centered digital experiences that solve real problems.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
