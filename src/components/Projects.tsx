@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
@@ -6,32 +7,37 @@ import project4 from "@/assets/project-4.jpg";
 
 const projects = [
   {
-    title: "Budget Planner Finance App",
-    description: "With user-centered approach, the goals was to create an intuitive interface for effortless financial management.",
+    title: "Meesho App Redesign",
+    description: "Simplifying Meesho — A redesign focused on improving usability, visual clarity, and overall user experience.",
     tags: ["UX Research", "Mobile App"],
     image: project1,
+    slug: "meesho-app-redesign",
   },
   {
     title: "Analytics Dashboard",
     description: "Designed a comprehensive analytics dashboard with clear data visualization and intuitive navigation.",
     tags: ["Dashboard", "Web App"],
     image: project2,
+    slug: null,
   },
   {
     title: "E-Commerce Redesign",
     description: "Redesigned the shopping experience with a focus on product discovery and seamless checkout flow.",
     tags: ["UI Design", "E-Commerce"],
     image: project3,
+    slug: null,
   },
   {
     title: "Travel Booking App",
     description: "Created a travel booking experience with interactive maps and simplified booking process.",
     tags: ["Mobile App", "UX Design"],
     image: project4,
+    slug: null,
   },
 ];
 
 const Projects = () => {
+  const navigate = useNavigate();
   return (
     <section id="work" className="px-6 md:px-12 py-16">
       <div className="max-w-7xl mx-auto border border-border rounded-3xl p-8 md:p-14">
@@ -59,6 +65,7 @@ const Projects = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
               className="group cursor-pointer bg-section-highlight rounded-2xl overflow-hidden"
+              onClick={() => project.slug && navigate(`/project/${project.slug}`)}
             >
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-0">
                 <div className="p-8 md:p-10">
