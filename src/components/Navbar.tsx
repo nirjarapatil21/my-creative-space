@@ -47,12 +47,20 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-background px-6 pb-6 space-y-4">
           {navLinks.map((link) => (
-            <a key={link.label} href={link.href} onClick={() => setOpen(false)}
+            <a key={link.label} href={link.href} onClick={(e) => {
+              e.preventDefault();
+              setOpen(false);
+              document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+            }}
               className="block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               {link.label}
             </a>
           ))}
-          <a href="#contact" onClick={() => setOpen(false)}
+          <a href="#contact" onClick={(e) => {
+            e.preventDefault();
+            setOpen(false);
+            document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+          }}
             className="block text-sm font-medium bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-center">
             Contact me
           </a>
