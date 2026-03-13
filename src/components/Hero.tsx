@@ -3,7 +3,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   return (
-    <section className="px-6 md:px-12 py-8">
+    <section id="hero" className="px-6 md:px-12 py-8">
       <div className="max-w-7xl mx-auto bg-hero-bg rounded-3xl overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           {/* Left - Text */}
@@ -24,7 +24,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="text-muted-foreground text-base md:text-lg mt-5 max-w-md leading-relaxed">
               
-              I design simple and user-friendly digital experiences.
+              A passionate UI/UX designer crafting intuitive, user-centered digital experiences that solve real problems.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
