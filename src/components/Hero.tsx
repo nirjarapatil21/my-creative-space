@@ -57,7 +57,7 @@ const Hero = () => {
             <img
 
               alt="Profile photo"
-              className="w-full h-full object-cover object-top" src="/lovable-uploads/a218a0d9-6e4d-478b-b75d-0aaec75ec5a4.jpg" />
+              className="w-full h-full object-cover object-top rounded-2xl max-h-[380px]" src="/lovable-uploads/a218a0d9-6e4d-478b-b75d-0aaec75ec5a4.jpg" />
             
           </motion.div>
         </div>
