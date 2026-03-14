@@ -36,7 +36,7 @@ const Hero = () => {
                 href="#work"
                 className="bg-primary text-primary-foreground px-7 py-3 rounded-full font-heading font-semibold text-sm hover:opacity-90 transition-opacity">
                 
-                View Work →
+                View Work
               </a>
               <a
                 href="#contact"
