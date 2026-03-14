@@ -17,10 +17,7 @@ const About = () => {
           <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-8">A little about me</h2>
           <div className="space-y-5 text-muted-foreground leading-[1.8] text-base max-w-2xl">
             <p>
-              I'm a fresher UI/UX designer with a deep passion for creating clean, intuitive, and user-friendly digital experiences. I believe great design is invisible — it just works.
-            </p>
-            <p>
-              My approach combines user research, thoughtful wireframing, and pixel-perfect visual design to craft interfaces that delight users and meet business goals.
+              Hi, I'm Nirjara, a UI/UX designer who enjoys creating simple, intuitive, and user-centered digital experiences. With a background in Mass Media and Communication, I bring strong research and storytelling skills into my design process. I focus on understanding user problems and turning them into clean, functional interface solutions. Currently, I'm looking for opportunities to grow, learn, and contribute as a UI/UX designer.
             </p>
           </div>
           <div className="mt-10">
