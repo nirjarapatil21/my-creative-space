@@ -1,29 +1,26 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
 
 const projects = [
   {
     title: "Meesho App Redesign",
     description: "Simplifying Meesho — A redesign focused on improving usability, visual clarity, and overall user experience.",
     tags: ["UX Research", "Mobile App"],
-    image: project1,
+    image: "/case-studies/meesho/01-hero.png",
     slug: "meesho-app-redesign",
   },
   {
     title: "My Fit Studio – Custom Tailoring App",
     description: "A UX case study for a custom tailoring app focused on perfect fit, seamless measurements, and personalized styling.",
     tags: ["UX Case Study", "Mobile App"],
-    image: project2,
+    image: "/case-studies/myfitstudio/01-section.png",
     slug: "my-fit-studio",
   },
   {
     title: "Kind Heart – Charity Website Design",
     description: "Designing a heartfelt charity website that inspires trust, encourages donations, and connects communities.",
     tags: ["Web Design", "UI Design"],
-    image: project3,
+    image: "/case-studies/kindheart/01-section.png",
     slug: "kind-heart-charity",
   },
 ];
@@ -44,7 +41,7 @@ const Projects = () => {
             Explore My Projects
           </h2>
           <p className="text-muted-foreground text-base mt-3 max-w-lg mx-auto">
-            Our works are a blend of innovative thinking and practical solutions, ensuring they are both unique and effective.
+            A selection of my UI/UX projects where I focused on solving real user problems through thoughtful design.
           </p>
         </motion.div>
 
