@@ -17,6 +17,22 @@ const caseStudies: Record<string, {
       `/case-studies/meesho/${String(i + 1).padStart(2, "0")}-${i === 0 ? "hero" : i === 1 ? "overview" : "section"}.png`
     ),
   },
+  "my-fit-studio": {
+    title: "My Fit Studio – Custom Tailoring App",
+    subtitle: "A UX Case Study for Perfect Fit and Personalized Styling",
+    tags: ["UX Case Study", "Mobile App", "UI Design", "Figma"],
+    images: Array.from({ length: 17 }, (_, i) =>
+      `/case-studies/myfitstudio/${String(i + 1).padStart(2, "0")}-section.png`
+    ),
+  },
+  "kind-heart-charity": {
+    title: "Kind Heart – Charity Website Design",
+    subtitle: "Designing a Heartfelt Charity Website That Inspires Trust",
+    tags: ["Web Design", "UI Design", "Figma"],
+    images: Array.from({ length: 6 }, (_, i) =>
+      `/case-studies/kindheart/${String(i + 1).padStart(2, "0")}-section.png`
+    ),
+  },
 };
 
 const CaseStudy = () => {

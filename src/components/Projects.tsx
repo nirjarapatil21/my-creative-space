@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
 
 const projects = [
   {
@@ -14,25 +13,18 @@ const projects = [
     slug: "meesho-app-redesign",
   },
   {
-    title: "Analytics Dashboard",
-    description: "Designed a comprehensive analytics dashboard with clear data visualization and intuitive navigation.",
-    tags: ["Dashboard", "Web App"],
+    title: "My Fit Studio – Custom Tailoring App",
+    description: "A UX case study for a custom tailoring app focused on perfect fit, seamless measurements, and personalized styling.",
+    tags: ["UX Case Study", "Mobile App"],
     image: project2,
-    slug: null,
+    slug: "my-fit-studio",
   },
   {
-    title: "E-Commerce Redesign",
-    description: "Redesigned the shopping experience with a focus on product discovery and seamless checkout flow.",
-    tags: ["UI Design", "E-Commerce"],
+    title: "Kind Heart – Charity Website Design",
+    description: "Designing a heartfelt charity website that inspires trust, encourages donations, and connects communities.",
+    tags: ["Web Design", "UI Design"],
     image: project3,
-    slug: null,
-  },
-  {
-    title: "Travel Booking App",
-    description: "Created a travel booking experience with interactive maps and simplified booking process.",
-    tags: ["Mobile App", "UX Design"],
-    image: project4,
-    slug: null,
+    slug: "kind-heart-charity",
   },
 ];
 

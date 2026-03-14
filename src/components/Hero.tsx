@@ -14,7 +14,7 @@ const Hero = () => {
               transition={{ duration: 0.5 }}
               className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.1] tracking-tight">
               
-              Hi, I'm Your Name
+              Hi, I'm Nirjara Patil
               <br />
               UI/UX Designer
             </motion.h1>
