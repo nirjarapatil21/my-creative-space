@@ -52,7 +52,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative h-64 md:h-auto md:max-h-[420px] flex items-center justify-center p-6">
+            className="relative h-52 md:h-auto md:max-h-[350px] flex items-center justify-center p-6">
             
             <img
 
