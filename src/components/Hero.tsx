@@ -14,7 +14,7 @@ const Hero = () => {
               transition={{ duration: 0.5 }}
               className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.1] tracking-tight">
               
-              Hi, I'm Your Name
+              Hi, I'm Nirjara Patil
               <br />
               UI/UX Designer
             </motion.h1>
@@ -36,7 +36,7 @@ const Hero = () => {
                 href="#work"
                 className="bg-primary text-primary-foreground px-7 py-3 rounded-full font-heading font-semibold text-sm hover:opacity-90 transition-opacity">
                 
-                View Work →
+                View Work
               </a>
               <a
                 href="#contact"
@@ -52,7 +52,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative h-64 md:h-auto md:max-h-[420px] flex items-center justify-center p-6">
+            className="relative h-52 md:h-auto md:max-h-[350px] flex items-center justify-center p-6">
             
             <img
 
