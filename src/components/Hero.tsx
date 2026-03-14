@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   return (
@@ -12,11 +11,11 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.1] tracking-tight">
+              className="font-heading font-extrabold text-foreground leading-[1.1] tracking-tight">
               
-              Hi, I'm Nirjara Patil
+              <span className="text-4xl md:text-5xl lg:text-6xl">Hi, I'm Nirjara Patil</span>
               <br />
-              UI/UX Designer
+              <span className="block mt-3 text-[calc(2.25rem-3px)] md:text-[calc(3rem-3px)] lg:text-[calc(3.75rem-3px)]">UI/UX Designer</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -55,7 +54,6 @@ const Hero = () => {
             className="relative h-52 md:h-auto md:max-h-[350px] flex items-center justify-center p-6">
             
             <img
-
               alt="Profile photo"
               className="w-full rounded-2xl object-contain" src="/lovable-uploads/a218a0d9-6e4d-478b-b75d-0aaec75ec5a4.jpg" />
             

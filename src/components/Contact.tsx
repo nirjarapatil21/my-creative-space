@@ -15,14 +15,14 @@ const Contact = () => {
             Let's work together
           </h2>
           <p className="text-muted-foreground text-base max-w-lg mx-auto mb-10">
-            I'm currently open to freelance projects and full-time opportunities. Feel free to reach out!
+            I'm currently seeking a UI/UX design role where I can contribute, learn, and grow while creating thoughtful user experiences.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="mailto:your@email.com"
+            <a href="mailto:nirjarapatil21@gmail.com"
               className="flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-full font-heading font-semibold text-sm hover:opacity-90 transition-opacity">
-              <Mail size={18} /> Say Hello <ArrowUpRight size={16} />
+              <Mail size={18} /> Contact Me <ArrowUpRight size={16} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/nirjara-patil-a7928035b/" target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 border border-foreground text-foreground px-8 py-3 rounded-full font-heading font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-colors">
               <Linkedin size={18} /> LinkedIn
             </a>
