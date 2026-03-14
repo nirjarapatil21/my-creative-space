@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const skills = ["Figma", "Adobe XD", "Sketch", "Illustrator", "Photoshop", "Prototyping", "Wireframing", "User Research", "Usability Testing", "Design Systems"];
+const skills = ["Figma", "User Research", "User Flow", "Wireframing", "Prototyping", "Usability Principles", "Information Architecture", "Interaction Design"];
 
 const About = () => {
   return (
