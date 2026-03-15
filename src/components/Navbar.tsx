@@ -32,11 +32,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#contact"
-            onClick={(e) => {
-              e.preventDefault();
-              document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
-            }}
+            href="mailto:nirjarapatil21@gmail.com"
             className="text-sm font-medium bg-accent text-accent-foreground px-5 py-2.5 rounded-full hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-accent/25"
           >
             Contact me
