@@ -53,7 +53,7 @@ const Hero = () => {
                 View Work
               </a>
               <a
-                href="#contact"
+                href="mailto:nirjarapatil21@gmail.com"
                 className="border border-foreground/20 text-foreground px-7 py-3 rounded-full font-heading font-semibold text-sm hover:bg-foreground hover:text-primary-foreground transition-all duration-300"
               >
                 Contact Me
@@ -66,11 +66,11 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative h-48 sm:h-52 md:h-auto md:max-h-[300px] flex items-center justify-center p-4 sm:p-6"
+            className="relative h-40 sm:h-44 md:h-auto md:max-h-[250px] flex items-center justify-center p-4 sm:p-6"
           >
             <img
               alt="Profile photo"
-              className="w-full max-w-[280px] md:max-w-full rounded-2xl object-contain"
+              className="w-full max-w-[220px] md:max-w-[260px] rounded-2xl object-contain"
               src="/lovable-uploads/a218a0d9-6e4d-478b-b75d-0aaec75ec5a4.jpg"
             />
           </motion.div>
