@@ -61,11 +61,7 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <a href="#contact" onClick={(e) => {
-              e.preventDefault();
-              setOpen(false);
-              document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
-            }}
+            <a href="mailto:nirjarapatil21@gmail.com"
               className="block text-sm font-medium bg-accent text-accent-foreground px-5 py-2.5 rounded-full text-center">
               Contact me
             </a>

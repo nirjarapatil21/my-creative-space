@@ -53,7 +53,7 @@ const Hero = () => {
                 View Work
               </a>
               <a
-                href="#contact"
+                href="mailto:nirjarapatil21@gmail.com"
                 className="border border-foreground/20 text-foreground px-7 py-3 rounded-full font-heading font-semibold text-sm hover:bg-foreground hover:text-primary-foreground transition-all duration-300"
               >
                 Contact Me
