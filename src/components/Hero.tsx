@@ -66,11 +66,11 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.93 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.25 }}
-            className="relative h-48 sm:h-52 md:h-auto md:max-h-[300px] flex items-start justify-center p-4 sm:p-6 pt-6 sm:pt-8"
+            className="relative flex items-center justify-center p-4 sm:p-6"
           >
             <img
               alt="Profile photo"
-              className="w-full max-w-[280px] md:max-w-full rounded-2xl object-cover object-top"
+              className="w-full max-w-[320px] md:max-w-[400px] rounded-2xl object-contain"
               src="/lovable-uploads/a218a0d9-6e4d-478b-b75d-0aaec75ec5a4.jpg"
             />
           </motion.div>
