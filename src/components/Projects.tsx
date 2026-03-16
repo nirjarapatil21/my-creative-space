@@ -56,7 +56,8 @@ const Projects = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.08 }}
+              transition={{ duration: 0.45, delay: i * 0.08 }}
+              whileHover={{ scale: 1.01, y: -2 }}
               className="group cursor-pointer bg-card rounded-2xl overflow-hidden border border-border/60 hover:border-accent/30 hover:shadow-xl hover:shadow-accent/5 transition-all duration-500"
               onClick={() => project.slug && navigate(`/project/${project.slug}`)}
             >
@@ -87,7 +88,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-contain transition-all duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                 </div>

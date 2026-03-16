@@ -14,15 +14,15 @@ const Hero = () => {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
               className="inline-block bg-accent/10 text-accent px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase mb-6"
             >
               Available for work
             </motion.div>
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
               className="font-heading font-extrabold text-foreground leading-[1.1] tracking-tight"
             >
               <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Hi, I'm Nirjara Patil</span>
@@ -35,7 +35,7 @@ const Hero = () => {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.15 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
               className="text-muted-foreground text-sm sm:text-base md:text-lg mt-5 max-w-md leading-relaxed"
             >
               A passionate UI/UX designer crafting intuitive, user-centered digital experiences that solve real problems.
@@ -43,18 +43,18 @@ const Hero = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.35 }}
               className="flex flex-wrap items-center gap-3 mt-8"
             >
               <a
                 href="#work"
-                className="bg-accent text-accent-foreground px-7 py-3 rounded-full font-heading font-semibold text-sm hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-accent/25"
+                className="bg-accent text-accent-foreground px-7 py-3 rounded-full font-heading font-semibold text-sm hover:opacity-90 hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-accent/25"
               >
                 View Work
               </a>
               <a
-                href="mailto:nirjarapatil21@gmail.com"
-                className="border border-foreground/20 text-foreground px-7 py-3 rounded-full font-heading font-semibold text-sm hover:bg-foreground hover:text-primary-foreground transition-all duration-300"
+                href="mailto:nirjarapatil21@gmail.com?subject=Let's%20Work%20Together"
+                className="border border-foreground/20 text-foreground px-7 py-3 rounded-full font-heading font-semibold text-sm hover:bg-foreground hover:text-primary-foreground hover:scale-[1.03] transition-all duration-300"
               >
                 Contact Me
               </a>
@@ -63,14 +63,14 @@ const Hero = () => {
 
           {/* Right - Photo */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.93 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative h-48 sm:h-52 md:h-auto md:max-h-[300px] flex items-center justify-center p-4 sm:p-6"
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.25 }}
+            className="relative h-48 sm:h-52 md:h-auto md:max-h-[300px] flex items-start justify-center p-4 sm:p-6 pt-6 sm:pt-8"
           >
             <img
               alt="Profile photo"
-              className="w-full max-w-[280px] md:max-w-full rounded-2xl object-contain"
+              className="w-full max-w-[280px] md:max-w-full rounded-2xl object-cover object-top"
               src="/lovable-uploads/a218a0d9-6e4d-478b-b75d-0aaec75ec5a4.jpg"
             />
           </motion.div>
