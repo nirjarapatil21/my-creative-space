@@ -4,18 +4,33 @@ const skills = ["Figma", "User Research", "User Flow", "Wireframing", "Prototypi
 
 const About = () => {
   return (
-    <section id="about" className="px-4 sm:px-6 md:px-12 py-12 md:py-16">
+    <section id="about" className="px-4 sm:px-6 md:px-12 py-12 md:py-16 relative">
+      {/* Background decorative elements */}
+      <div className="absolute top-10 right-10 w-24 h-24 bg-accent/5 rounded-full blur-2xl pointer-events-none" />
+
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="bg-card rounded-3xl p-6 sm:p-8 md:p-14 border border-border/60 relative grain-overlay"
+          className="bg-card rounded-3xl p-6 sm:p-8 md:p-14 border border-border/60 relative grain-overlay overflow-hidden"
         >
           {/* Decorative accent line */}
           <div className="absolute top-0 left-8 md:left-14 w-12 h-1 bg-accent rounded-b-full" />
-          
+
+          {/* Animated corner decoration */}
+          <motion.div
+            className="absolute -top-4 -right-4 w-24 h-24 rounded-full border border-accent/10 hidden md:block"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          />
+          <motion.div
+            className="absolute -bottom-6 -left-6 w-16 h-16 rounded-full bg-accent/5 blur-xl hidden md:block"
+            animate={{ scale: [1, 1.3, 1] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+          />
+
           <span className="inline-block bg-accent/10 text-accent px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase mb-4">
             About
           </span>
@@ -31,11 +46,12 @@ const About = () => {
               {skills.map((skill, i) => (
                 <motion.span
                   key={skill}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, scale: 0.9, y: 10 }}
+                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: i * 0.04 }}
-                  className="text-xs sm:text-sm font-medium text-foreground bg-section-highlight px-4 py-2 rounded-full border border-border/60 hover:border-accent/40 hover:bg-accent/5 transition-colors duration-300"
+                  transition={{ duration: 0.3, delay: i * 0.05 }}
+                  whileHover={{ scale: 1.08, y: -2 }}
+                  className="text-xs sm:text-sm font-medium text-foreground bg-section-highlight px-4 py-2 rounded-full border border-border/60 hover:border-accent/40 hover:bg-accent/5 hover:shadow-md hover:shadow-accent/10 transition-all duration-300 cursor-default"
                 >
                   {skill}
                 </motion.span>
